@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "postgres",
-    "password": "&sppMA6@yTBY%0C",
+    "password": "d4PaB$0B3w1^aeYM$2y",
     "database": "unit2_assessment",
-    "host": "localhost",
+    "host": "ga1.cpjptdlfquxz.us-west-2.rds.amazonaws.com",
     "dialect": "postgres",
     "logging": false
   }
