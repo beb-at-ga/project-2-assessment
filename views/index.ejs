@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wacky Widgets</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <h1>Wacky Widgets</h1>
+
+  <% if (widgets.length > 0) { %>
+    <% widgets.forEach ((w) => { %>
+    <section>
+      <div>
+        <h3><%= w.description %></h4>
+      </div>
+      <div>
+        <p>Quantity: <%= w.quantity %></p>
+      </div>
+      <form method="POST" action="/<%= w.id %>?_method=DELETE">
+        <button type="submit">DELETE</button>
+      </form>
+    </section>
+    <% }) %>
+
+  <% } else { %>
+    <h3>No Widgets Exist</h3>
+    <hr />  
+  <% } %>
+
+
+  <h4>Add Widget</h4>
+  <form method="POST" action="/">
+    <input type="string" name="description" placeholder="Widget description..." />
+    <input type="number" name="quantity" placeholder="Widget quantity..." />
+    <button type="submit">ADD WIDGET</button>
+  </form>
+
+</body>
+</html>

@@ -1,17 +1,10 @@
 {
   "development": {
+    "username": "postgres",
+    "password": "&sppMA6@yTBY%0C",
     "database": "unit2_assessment",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
-  },
-  "test": {
-    "database": "unit2_assessment",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
-  },
-  "production": {
-    "database": "unit2_assessment",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "host": "localhost",
+    "dialect": "postgres",
+    "logging": false
   }
 }
